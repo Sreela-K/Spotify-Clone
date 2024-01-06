@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&family=Ubuntu&family=Varela+Round&display=swap');
 body{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(#00bf8f, #001510);
+     
 }
+
 
 *{
     margin: 0;
@@ -17,7 +20,7 @@ nav ul{
     display: flex;
     align-items: center;
     list-style-type:none ;
-    height: 37px;
+    height: 45px;
     background-color: black;
     color: aliceblue;
     
@@ -52,12 +55,14 @@ nav ul li{
     font-size: small;
     background-image: url('./images/bg.jpg');
     background-size: cover;
-   
+     
 }
+
+
 
 .bottom{
     position:sticky;
-    height: 85px;
+    height: 92px;
     background-color: black;
     bottom:0;
     display: flex;
@@ -75,6 +80,7 @@ nav ul li{
 #progressBar{
     width: 80vw;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -84,7 +90,7 @@ nav ul li{
 
 .icons i{
     cursor: pointer;
-    padding: 4px;
+    margin: 10px;
 }
 
 .songs{
@@ -123,9 +129,10 @@ nav ul li{
     position: absolute;
     left: 10vw;
     margin-top: 28px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .songinfo img{
     opacity: 0;
-    transition: opacity is ease-in;
+    transition: opacity 0.4s ease-in;
 }

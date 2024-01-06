@@ -26,49 +26,49 @@
                 <div class="songitem">
                     <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\cover1.jpg"
                         alt="">
-                        <span>Desi Kalakar</span>
+                        <span class="songname">Desi Kalakar</span>
                         <span class="songlistpalay">
-                            <span class="timestamp">04:15 <i class="fa-regular fa-circle-play fa-lg"></i></span>
+                            <span class="timestamp">04:15 <i id="0" class=" songitemplay fa-regular fa-circle-play fa-lg"></i></span>
                         </span>
                 </div>
                 <div class="songitem">
                     <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\cover1.jpg"
                         alt="">
-                    <span>Desi Kalakar</span>
+                    <span class="songname">Desi Kalakar</span>
                     <span class="songlistpalay">
-                        <span class="timestamp">04:15 <i class="fa-regular fa-circle-play fa-lg"></i></span>
+                        <span class="timestamp">04:15 <i id="1" class=" songitemplay fa-regular fa-circle-play fa-lg"></i></span>
                     </span>
                 </div>
                 <div class="songitem">
                     <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\cover1.jpg"
                         alt="">
-                    <span>Desi Kalakar</span>
+                    <span class="songname">Desi Kalakar</span>
                     <span class="songlistpalay">
-                        <span class="timestamp">04:15 <i class="fa-regular fa-circle-play fa-lg"></i></span>
+                        <span class="timestamp">04:15 <i id="2" class=" songitemplay fa-regular fa-circle-play fa-lg"></i></span>
                     </span>
                 </div>
                 <div class="songitem">
                     <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\cover1.jpg"
                         alt="">
-                    <span>Desi Kalakar</span>
+                    <span class="songname">Desi Kalakar</span>
                     <span class="songlistpalay">
-                        <span class="timestamp">04:15 <i class="fa-regular fa-circle-play fa-lg"></i></span>
+                        <span class="timestamp">04:15 <i id="3" class=" songitemplay fa-regular fa-circle-play fa-lg"></i></span>
                     </span>
                 </div>
                 <div class="songitem">
                     <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\cover1.jpg"
                         alt="">
-                    <span>Desi Kalakar</span>
+                    <span class="songname">Desi Kalakar</span>
                     <span class="songlistpalay">
-                        <span class="timestamp">04:15 <i class="fa-regular fa-circle-play fa-lg"></i></span>
+                        <span class="timestamp">04:15 <i id="4" class=" songitemplay fa-regular fa-circle-play fa-lg"></i></span>
                     </span>
                 </div>
                 <div class="songitem">
                     <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\cover1.jpg"
                         alt="">
-                    <span>Desi Kalakar</span>
+                    <span class="songname">Desi Kalakar</span>
                     <span class="songlistpalay">
-                        <span class="timestamp">04:15 <i class="fa-regular fa-circle-play fa-lg"></i></span>
+                        <span class="timestamp">04:15 <i id="5" class=" songitemplay fa-regular fa-circle-play fa-lg"></i></span>
                     </span>
                 </div>
                 
@@ -80,17 +80,18 @@
 
         <!-- progressbar -->
         <div class="bottom">
-            <input type="range" name="" id="progressBar" min="0" max="100">
+            <input type="range" name="" id="progressBar" value="0" min="0" max="100">
             <div class="icons">
                 <!-- fontawsome icons -->
-                <i class="fa-solid fa-backward fa-xl"></i>
-               <i class="fa-solid fa-circle-play fa-xl"></i>
-                <i class="fa-solid fa-forward fa-xl" style="color: #fcfcfc;"></i>
+                <i class="fa-solid fa-backward fa-xl" id="previous"></i>
+               <i class="fa-solid fa-circle-play fa-xl" id='masterPlay'></i>
+                <i class="fa-solid fa-forward fa-xl" id="next" style="color: #fcfcfc;"></i>
                 
             </div>
             <div class="songinfo">
-                <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\playing.gif" alt=""
-                  width="43px"> Desi Kalakar - Honey Singh
+                <img src="C:\Users\MY PC\Desktop\html-css-javascript-projects\Spotify-Clone\images\playing.gif" id="gif"
+                alt="" width="43px">
+                 <span id="mastersongname">Desi Kalakar</span>
             </div>
         </div>
 
