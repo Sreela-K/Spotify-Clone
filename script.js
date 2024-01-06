@@ -99,13 +99,21 @@ Array.from(document.getElementsByClassName("songitemplay")).forEach((element)=>{
 
 
         //playing audio in list
-         songIndex = parseInt(e.target.id); //converted the id to int and saved in index
+    if (audioElement.paused || audioElement.currentTime <= 0) {
+        songIndex = parseInt(e.target.id); //converted the id to int and saved in index
         audioElement.src = `songs/0${songIndex}.mp3`; //now we are giving the index in part of the name of the song so it will play i order
         audioElement.currentTime = 0 ;
         audioElement.play();
         gif.style.opacity=1;
         masterPLay.classList.remove('fa-circle-play');
         masterPLay.classList.add('fa-circle-pause');
+    }else{
+        audioElement.pause();
+        masterPLay.classList.remove('fa-circle-pause');
+        masterPLay.classList.add('fa-circle-play');
+        e.target.classList.remove("fa-circle-pause");
+        e.target.classList.add("fa-circle-play");
+    }
             
     })
 })
